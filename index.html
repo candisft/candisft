@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Chat System</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="chatContainer">
+		<div id="chatTopBar" class="rounded"></div>
+		<div id="ChatLineHolder"></div>
+		
+		<div id="chatUsers" class="rounded"></div>
+		<div id="chatBottomBar" class="rounded">
+			<div class="tip"></div>
+			
+			<form action="" method="post" id="loginForm">
+				<input name="name" id="name" class="rounded" maxlength="16" />
+				<input name="email" id="email" class="rounded" />
+				<input type="submit" value="Login" class="blueButton">
+			</form>
+
+			<form action="" method="post" id="submitForm">
+				<input name="chatText" id="chatText" class="rounded" maxlength"255" />
+				<input type="submit" class="blueButton" value="Submit" />
+			</form>
+
+		</div>
+
+	</div>
+		
+</body>
+</html>

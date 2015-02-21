@@ -1,0 +1,23 @@
+.slice {
+	display: table;
+	table-layout: fixed; //makes items equal size automatically
+	width: 100%;
+}
+
+.slice-autosize {
+	table-layout:auto;
+}
+
+.slice-item {
+	display: table-cell;
+	vertical-align: top;
+}
+
+@include phone() {
+	.content {
+		&>.slice-item {display:block;}
+	}
+	.slice-item {
+		display: block;
+	}
+}

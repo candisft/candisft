@@ -1,0 +1,63 @@
+body {
+	height: 100%;
+	width: 100%;
+	background: $white;
+	font-family: $site-font;
+}
+
+.container {
+	height: auto;
+	width: 80%;
+	max-width: $full + px;
+	
+	background: darken($white, 25%); //this will darken the white by 25%
+	margin: 0 auto;
+	padding: 25px;
+
+	h1,h2 {
+		font-family: $font-bold;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin: $double-spacing;
+	}
+
+	h1 {font-size: 55px;}
+
+	h2 {font-size: 40px;}
+	p {
+		color:$green;
+		&:hover {
+			color:$blue;
+		}
+	}
+}
+
+.boxes {
+	width: 46%;
+	height: 300px;
+	margin: 1%;
+	float: left;
+
+	background: $green;
+	border: 2px solid $coal;
+
+	@include phone() {
+		width: 100%;
+		float: none;
+	}
+}
+
+.slice-item {
+	padding: 5px;
+}
+
+.content {
+	padding: 5px;
+}
+
+.item {
+	height: 150px;
+	width: 100%;
+	background:$blue;
+}

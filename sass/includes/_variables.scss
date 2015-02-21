@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:400,300,600);
+//font-family: 'Oswald', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+
+$white: #ffffff;
+$coal: #333333;
+$blue: #2980b9;
+$green: #27ae60;
+
+$site-font: 'Open Sans', sans-serif;
+$font-bold: 'Oswald', sans-serif;
+$site-light: 300;
+$font-med: 400;
+
+//spacing
+$spacing: 10px;
+$double-spacing: $spacing*2;
+$triple-spacing: $spacing*3;
+
+//responsive
+	//global breaks
+	$tiny: 320;
+	$small: 480;
+	$phone: 640;
+	$phone-l: 768;
+	$tablet: 960;
+	$tablet-l: 1024;
+	$full: 1080; //set to the same as wrapper-width
+	$desktop: 1280;
+
+	//building media queries
+	@mixin tiny() {
+		@include respond-to($tiny) { @content;}
+	}
+	@mixin small() {
+		@include respond-to($small) { @content;}
+	}
+	@mixin phone() {
+		@include respond-to($phone) { @content;}
+	}
+	@mixin phone-l() {
+		@include respond-to($phone-l) { @content;}
+	}
+	@mixin tablet() {
+		@include respond-to($tablet) { @content;}
+	}
+	@mixin tablet-l() {
+		@include respond-to($tablet-l) { @content;}
+	}
+	@mixin full() {
+		@include respond-to($full) { @content;}
+	}
+	@mixin desktop() {
+		@include respond-to($desktop) { @content;}
+	}
