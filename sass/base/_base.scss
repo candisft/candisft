@@ -5,59 +5,162 @@ body {
 	font-family: $site-font;
 }
 
-.container {
-	height: auto;
-	width: 80%;
-	max-width: $full + px;
-	
-	background: darken($white, 25%); //this will darken the white by 25%
-	margin: 0 auto;
-	padding: 25px;
+/*Top Bar*/
 
-	h1,h2 {
-		font-family: $font-bold;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 5px;
-		margin: $double-spacing;
-	}
+#chatContainer {
+	width:510px;
+	margin:100px auto;
+	position: relative;
 
-	h1 {font-size: 55px;}
+	#chatTopBar {
+		height:40px;
+		background:url('../img/solid_gray.jpg') repeat-x #d0d0d0;
+		border: 1px solid #fff;
+		margin-bottom:15px;
+		position:relative;
+		color:#777;
+		text-shadow:1px 1px 0 #FFFFFF;
 
-	h2 {font-size: 40px;}
-	p {
-		color:$green;
-		&:hover {
-			color:$blue;
+		.name {
+			position: absolute;
+			top:10px;
+			left:40px;
+		}
+
+		img {
+			left:9px;
+			position:absolute;
+			top:8px;
 		}
 	}
+
+	/*Chats*/
+	#chatLineHolder {
+		height:360px;
+		width:350px;
+		margin-bottom:20px;
+		background-color: black;
+	}
+
+	.chat {
+		background:url('../img/chatline_bg.jpg') repeat-x #d5d5d5;
+		min-height:24px;
+		padding:6px;
+		border:1px solid #FFFFFF;
+
+		padding:8px 6px 4px 37px;
+		position:relative;
+		margin:0 10px 10px 0;
+
+		:last-child {
+			margin-bottom:0;
+		}
+
+		.gravatar {
+			background:url('http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?size=23') no-repeat;
+			left:7px;
+			position: absolute;
+			top:7px;
+		}
+
+		img {
+			display:block;
+			visibility: hidden;
+		}
+	}
+	
+	/*Chat Users Area*/
+
+	#chatUsers {
+		background-color:#202020;
+		border:1px solid #111111;
+		height:360px;
+		position: absolute;
+		right:0;
+		top:56px;
+		width:150px;
+
+		.user {
+			background:url('http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?size=23') no-repeat 1px 1px #444444;
+			border:1px solid #111111;
+			float:left;
+			height:32px;
+			margin:10px 0 0 10px;
+			width:32px;
+
+			img {
+				border:1px solid #444444;
+				display:block;
+				visibility: hidden;
+			}
+		}
+	}
+
+	/*Bottom Bar*/
+
+	#chatBottomBar {
+		background: url('../img/solid_gray.jpg') repeat-x #d0d0d0;
+		position:relative;
+		padding:10px;
+		border:1px solid #FFF;
+
+		.tip {
+			position: absolute;
+			width:0;
+			height:0;
+			border:10px solid transparent;
+			border-bottom-color:#eeeeee;
+			top:-20px;
+			left:20px;
+		}
+	}
+
+	#submitForm{
+		display:none;
+	}
+
+	/*Additional Styles*/
+
+	.blueButton {
+		background: url('../img/button_blue.png') no-repeat;
+		border:none !important;
+		color:#516D7F !important;
+		display:inline-block;
+		font-size:13px;
+		height:29px;
+		text-align: center;
+		text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+		width:75px;
+		margin:0;
+		cursor:pointer;
+	}
+
+	.blueButton:hover {
+		background-position:left bottom;
+	}
+
 }
 
-.boxes {
-	width: 46%;
-	height: 300px;
-	margin: 1%;
-	float: left;
+/*Overriding the default styles of jScrollPane*/
 
-	background: $green;
-	border: 2px solid $coal;
+.jspTrack {
+	background-color:#202020;
+	border:1px solid #111111;
+	width:3px;
+	right:-10px;
+}
 
-	@include phone() {
-		width: 100%;
-		float: none;
+.jspDrag {
+	background:url('../img/slider.png') no-repeat;
+	width:20px;
+	left:-9px;
+	height:20px !important;
+	margin-top:-5px;
+
+	:hover {
+		background-position: left bottom;
 	}
 }
 
-.slice-item {
-	padding: 5px;
-}
 
-.content {
-	padding: 5px;
-}
 
-.item {
-	height: 150px;
-	width: 100%;
-	background:$blue;
-}

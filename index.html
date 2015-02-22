@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Web Chat System</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
 </head>
 <body>
-	<div class="chatContainer">
+	<div id="chatContainer">
 		<div id="chatTopBar" class="rounded"></div>
-		<div id="ChatLineHolder"></div>
+		<div id="chatLineHolder"></div>
 		
 		<div id="chatUsers" class="rounded"></div>
 		<div id="chatBottomBar" class="rounded">
@@ -28,6 +29,12 @@
 		</div>
 
 	</div>
+
+	<!-- Loading jQuery, the mousewheel plugin and jScollPane, as well as webchat.js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="script/js/jquery.jscrollpane.min.js"></script>
+	<script src="script/js/jquery.mousewheel.js"></script>
+	<script src="script/js/webchat.js"></script>
 		
 </body>
 </html>
