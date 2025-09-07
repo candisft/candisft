@@ -1,0 +1,55 @@
+#EXTM3U
+#EXTINF:0,CFM
+#EXTGRP:unsorted
+https://stream2.radiocfm.ro:8443/CFM
+#EXTINF:0,Bucuresti FM
+#EXTGRP:unsorted
+http://stream2.srr.ro:8032/stream/1/
+#EXTINF:0,MB Music
+#EXTGRP:unsorted
+https://s33.myradiostream.com/16150/listen.mp3
+#EXTINF:0,Radio Guerilla
+#EXTGRP:unsorted
+http://live.guerrillaradio.ro:8010/guerrilla.aac
+#EXTINF:0,SKY FM
+#EXTGRP:unsorted
+https://www.radiosky.ro/?radio_player_play=http%3A%2F%2Flive.radiosky.ro%3A8000%2Fradiosky.mp3
+#EXTINF:0,Europa FM
+#EXTGRP:unsorted
+http://astreaming.europafm.ro:8000/europafm_aacp48k
+#EXTINF:0,Kiss FM
+#EXTGRP:unsorted
+http://80.86.106.143:9128/kissfm.aacp
+#EXTINF:0,Pro FM
+#EXTGRP:unsorted
+http://edge126.rdsnet.ro:84/profm/profm.mp3
+#EXTINF:0,Digi FM
+#EXTGRP:unsorted
+http://edge76.rdsnet.ro:84/digifm/digifm.mp3
+#EXTINF:0,Radio Rom nia Cultural
+#EXTGRP:unsorted
+http://stream2.srr.ro:8012/
+#EXTINF:0,Romantic FM
+#EXTGRP:unsorted
+http://live.romanticfm.ro:8002/
+#EXTINF:0,Magic FM
+#EXTGRP:unsorted
+http://80.86.106.143:9128/magicfm.aacp
+#EXTINF:0,Radio ZU
+#EXTGRP:unsorted
+http://5.254.113.34:9123/radiozu.mp3
+#EXTINF:0,Radio Guerrilla
+#EXTGRP:unsorted
+http://live.guerrillaradio.ro:8010/guerrilla.aac
+#EXTINF:0,Rock FM
+#EXTGRP:unsorted
+http://151.80.77.220:8000/
+#EXTINF:0,Antena Satelor
+#EXTGRP:unsorted
+http://stream2.srr.ro:8042/
+#EXTINF:0,Radio Rom nia Muzical
+#EXTGRP:unsorted
+http://stream2.srr.ro:8022/
+#EXTINF:0,Virgin Radio
+#EXTGRP:unsorted
+http://astreaming.virginradio.ro:8000/virgin_aacp_64k
